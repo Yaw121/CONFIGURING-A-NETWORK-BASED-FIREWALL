@@ -81,8 +81,25 @@ add a new rule.
 
 
 4. While on the Firewall / NAT / Port Forward / Edit interface, make the following changes: 
-a. Change Destination port range to SSH for both From port and To port from the dropdown 
-menu. 
+  a. Change Destination port range to SSH for both From port and To port from the dropdown 
+menu.
+![image](https://github.com/user-attachments/assets/5513a92c-b98c-4d3a-9549-9d10cd3ea2fb)
+
+  b. Change Redirect target IP to 172.16.1.10.
+![image](https://github.com/user-attachments/assets/b7365313-a5c2-4670-8ae8-211f6229e1ba)
+
+  c. Change Redirect target port to SSH from the dropdown menu.
+  ![image](https://github.com/user-attachments/assets/d6222bc2-7ab2-4a67-a7e7-140b43ec56db)
+
+
+  d. Click the Save button located towards the bottom of the page 
+
+5. For the new configuration to take place, click the Apply changes button.
+![image](https://github.com/user-attachments/assets/d153676e-fde7-42cb-91ff-76e066a76aa0)
+   
+
+  
+
 
   
 
