@@ -96,28 +96,51 @@ menu.
 
 5. For the new configuration to take place, click the Apply changes button.
 ![image](https://github.com/user-attachments/assets/d153676e-fde7-42cb-91ff-76e066a76aa0)
+</details>
+
+
+
+<details>
+<summary><b>RETARGETED SSH CONNECTION</b></summary>
+
+1.  Change focus to the Kali system and initiate a quick scan against the firewall appliance using the 
+terminal: nmap 203.0.113.1... This command will perform a scan on the firewall appliance at the IP address 203.0.113.1, providing details about open ports and services running on the system. After executing the command, you will see the results of the scan in the terminal.
+![image](https://github.com/user-attachments/assets/e2d3fd65-c415-4d91-b12e-cad5a737a989)
+Notice the change of open ports on the system; SSH is now open.
+
+
+2. To verify the SSH configuration on the firewall, open the Terminal on your Kali system and type the following command: ssh sysadmin@203.0.113.1. 
+When prompted, answer "yes" to accept the fingerprint. If asked for a password, enter the password for your KALI.
+![image](https://github.com/user-attachments/assets/0f9d4f7f-3d0f-4992-bf7f-05a936eebf71)
+
+
+3. When you see the Secure Shell (SSH) prompt indicating you're logged in as sysadmin on the ubuntusrv machine, you can confirm you're on the correct system by using the ifconfig command: This command will display the network configuration of the system, including the IP address and network interfaces. Check the IP address to ensure it matches the expected address for the ubuntusrv machine, confirming you're on the right system.
    
-
-  
-
-
-  
+![image](https://github.com/user-attachments/assets/56b3990f-609b-4834-b8d6-f6991f3df821)
 
 
 
+4. To examine the default gateway on the system, type the <b>route</b> command.
+   This will display the routing table, including the default gateway under the "Gateway" column. The default gateway is typically listed as 0.0.0.0 in the destination column and shows the IP address of the gateway.
+![image](https://github.com/user-attachments/assets/fad42aa3-1fc8-4a71-a9d8-89137f5a9170)
 
 
+5. To leave the active SSH connection, simply type the <b>exit</b> command
+   This will terminate the SSH session and return you to the local machine's command prompt.
+![image](https://github.com/user-attachments/assets/200ba411-fc70-4109-8904-05c3dda96a02)
 
-
-
-
-
-
-
-
+   
+   
+   
 
 
 
 
   
 </details>
+
+
+
+
+
+
