@@ -129,17 +129,47 @@ When prompted, answer "yes" to accept the fingerprint. If asked for a password, 
    This will terminate the SSH session and return you to the local machine's command prompt.
 ![image](https://github.com/user-attachments/assets/200ba411-fc70-4109-8904-05c3dda96a02)
 
-   
-   
-   
-
-
-
-
-  
 </details>
 
 
+<details>
+
+<summary><b>CONFIGURING VPN ON PFSENSE</b></summary>
+
+<b>CONFIGURING VPN SERVER</b>
+
+1. Change focus to the UbuntuSRV system and focus on the Firefox web browser. If you are not 
+already logged into the pfSense firewall management interface, do so now
+
+
+2. While logged in, navigate to System > Cert Manager.
+  ![image](https://github.com/user-attachments/assets/e13d2ee0-fbcc-4b43-948f-e07d4b233192)
+
+
+
+3. On the System / Certificate Manager / CAs page, while on the CAs tab, click on the + Add button.
+   ![image](https://github.com/user-attachments/assets/5f39edae-a4a1-413e-a5af-37d84e78ce0f)
+
+
+4. A new page should open; fill in the necessary fields.  
+a. Descriptive Name: MyCA 
+b. Method:  Create an internal Certificate Authority
+![image](https://github.com/user-attachments/assets/8ff78d76-1ecd-488d-9581-b6bc90fdb37d)
+
+
+c. Key Length:  2048 bits 
+d. Lifetime:  365 days 
+![image](https://github.com/user-attachments/assets/1b3f6f71-a649-4c9d-8b46-b0259328ad7c)
+
+ e. Distinguished Name: 
+i. 
+Common Name: internal-ca 
+ii. Country Code:  US 
+iii. State or Province: Texas
+iv. City: Austin 
+v. Organization: XYZ Security  
+</details>
+![image](https://github.com/user-attachments/assets/b24d4067-6217-4301-82bf-e67e57dd18ef)
 
 
 
