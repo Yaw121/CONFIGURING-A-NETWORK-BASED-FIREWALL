@@ -294,13 +294,114 @@ c. Click Next.
 <details>
 <summary><b>EXPORTING VPN CLIENT DATA</b></summary>
 
+
+1.  Switch to the kali machine, and start a Firefox browser. Go to http://203.0.113.1 and log in as your username and password.
+   ![image](https://github.com/user-attachments/assets/1373a68e-e209-47ab-9c1f-09bf91950c00)
+
+
+2. Under VPN, click to go to the OpenVPN page.
+   ![image](https://github.com/user-attachments/assets/66a9d968-0f3a-4d72-8128-e3205f0b5611)
+
+
+3. Click on the Client Export tab. Scroll down towards the bottom where the OpenVPN Clients is presented. Underneath the Export 
+column, click on the Archive link to download the bundled configurations. 
+![image](https://github.com/user-attachments/assets/4e8d5e93-a3d0-4f3d-b20c-8ab06c43f1ac)
+
+Notice that the file download is complete. 
+![image](https://github.com/user-attachments/assets/0a5fd596-bf12-41cb-8b56-5ea90528a962)
+</details>
+
+<details>
+<summary><b>CONFIGURING THE VPN CLIENT</b></summary>
+
 1. While on the Kali system, open a terminal and type the command below to change to the 
-Downloads directory. 
+Downloads directory.
+![image](https://github.com/user-attachments/assets/de5a4cc6-e997-4cce-b724-2bc9ca0c32ad)
 
-![image](https://github.com/user-attachments/assets/fdc6939e-3eb6-4c23-a38e-59947be4f60f)
+
+2. Unzip the downloaded zip file:  unzip pfSense-UDP4-1194-vpnuser-config.zip
+ ![image](https://github.com/user-attachments/assets/0431db90-a373-4ead-9583-414c42d8db79)
 
 
- 2. Unzip the downloaded zip file. 
+3. Open the Network Manager by clicking on the network icon located on the top pane and navigate 
+to VPN Connections > Add a VPN Connection. 
+![image](https://github.com/user-attachments/assets/69279e4b-352c-4f67-aac1-fdcf27a1e9f3)
+
+
+4. On the Choose a VPN connection Type window, select Import a saved VPN configuration option 
+and click Create.
+![image](https://github.com/user-attachments/assets/cb667d23-db84-48a6-ac68-4e0fdc193830)
+
+
+5. In the File Manager window, select Downloads from the menu on the left. Double-click on the 
+pfsense-udp-1194-vpnuser folder. Select the pfSense-UDP4-1194-vpnuser.ovpn file and click the 
+Open button.
+![image](https://github.com/user-attachments/assets/b281162e-c342-4ca2-b39d-47d81befa94e)
+
+
+6. In the new pop-up window, leave the Connection name as is. Type username in the User name field, 
+and type your in the Password field. Then, type your again in the User key 
+password field. Then, click the Save button.
+![image](https://github.com/user-attachments/assets/5a815fe1-eac6-4c32-a3f2-2fce8b6d02b0)
+
+
+
+7. If prompted to create a password for the new key ring, leave the two fields empty and click 
+Continue. 
+![image](https://github.com/user-attachments/assets/5435aca9-3b28-4e9b-ab8a-2891422f9f34)
+
+
+8. If prompted to store passwords unencrypted, click Continue. 
+![image](https://github.com/user-attachments/assets/52f4bdd2-428a-4dc7-8697-c25ee495fee8)
+</details>
+
+
+
+
+<details>
+  <summary><b>CONNECTING THE VPN CLIENT</b></summary>
+
+1. Connect using the VPN settings by clicking on the Network Manager icon on the top pane and 
+navigating to VPN Connection > pfSense-UDP4-1194-vpnuser. If prompted for a password, enter 
+vpnpassword. Click OK.
+
+![image](https://github.com/user-attachments/assets/30a53dfc-1c27-4dbc-97f2-a28e285d0334)
+
+![image](https://github.com/user-attachments/assets/7dfb62f6-dd41-4822-8c20-0c1f01201e0d)
+
+
+2. Once the connection is established, a message will pop up like so:
+ ![image](https://github.com/user-attachments/assets/b71eba56-dc58-47ae-b4e3-a96e23ef34af)
+
+
+3. Verify the VPN tunnel and the IP address given by entering the command below in a Terminal. 
+
+![image](https://github.com/user-attachments/assets/21c49ffd-059b-4185-a887-a65c7f779a57)
+</details>
+
+
+
+
+<details>
+<summary><b>MANAGING VPN CONNECTION</b></summary>
+
+1. Once connected to the VPN server, switch to the UbuntuSRV, Firefox web browser, and navigate 
+back to the pfSense Web Configurator. 
+2. When logged in as admin, navigate to Status > System Logs from the top menu pane.
+
+![image](https://github.com/user-attachments/assets/b8e4f71e-9e5a-4af0-a69f-a6301dc359fd)
+
+
+3. On the new page, select the OpenVPN tab.
+
+4. 4. Notice the authentication to the VPN server. You may have to scroll down to find it.
+![image](https://github.com/user-attachments/assets/06611f84-81d9-43bb-a1d9-1813f47504ee)
+
+
+  5. Navigate to Status > OpenVPN. 
+6. Notice how the current active VPN connections are listed here
+   ![image](https://github.com/user-attachments/assets/188fcba0-b121-4e77-94f7-3667c929be6c)
+
 </details>
 
 
