@@ -24,7 +24,7 @@ Firstly, we will be using the UbuntuSRV virtual machine. Lunch the VM and open t
 4. After the successful ping, change focus to the UbuntuSRV system and open the Firefox web browser. In the address space, type http://172.16.1.1. Press Enter
    ![image](https://github.com/user-attachments/assets/ce22a4d2-6efa-4a19-b858-8b1104cbfd4c)
 
- 5. Type the username sysadmin and password NDGlabpass123!. Click the SIGN IN button
+ 5. Type your username and password. Click the SIGN IN button
     ![image](https://github.com/user-attachments/assets/ba9abfb7-578d-4654-9cf6-cb53cf4de312)
 
 6. Once in the pfSense management graphical user interface, navigate to Firewall > Rules.
