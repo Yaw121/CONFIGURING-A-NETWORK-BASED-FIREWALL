@@ -159,17 +159,148 @@ b. Method:  Create an internal Certificate Authority
 
 c. Key Length:  2048 bits 
 d. Lifetime:  365 days 
-![image](https://github.com/user-attachments/assets/1b3f6f71-a649-4c9d-8b46-b0259328ad7c)
+![image](https://github.com/user-attachments/assets/1754bc82-328a-400d-8d4a-b3caa9908256)
 
  e. Distinguished Name: 
-i. 
-Common Name: internal-ca 
+i. Common Name: internal-ca
 ii. Country Code:  US 
 iii. State or Province: Texas
 iv. City: Austin 
 v. Organization: XYZ Security  
 ![image](https://github.com/user-attachments/assets/b24d4067-6217-4301-82bf-e67e57dd18ef)
+
+F. Click Save.
+
+
+5. Add a server certificate this time by navigating to the Certificates tab. To add a new certificate, click 
+on the + Add/Sign button. 
+![image](https://github.com/user-attachments/assets/d845d18c-d2f9-4e1d-8ccc-6a135f17045d)
+
+
+6. A new page should open; select the dropdown menu next to Method and select Create an internal 
+Certificate.
+  a. Descriptive Name: VPNServerCert 
+  b. Certificate authority: MyCA 
+  c. Key Length:  2048 bits 
+
+![image](https://github.com/user-attachments/assets/e9fc6aed-fd6a-49c1-a2b7-27db32c1a6bb)
+
+d. Lifetime: 365 days
+![image](https://github.com/user-attachments/assets/7d76ab7a-156d-4074-8135-40a877a014ab)
+
+e. Distinguished Name: 
+i. 
+Common Name:  pfsense.netlab.local 
+ii. Country Code:  US 
+iii. State or Province:  Texas 
+iv. City:  Austin 
+v. Organization:  XYZ Security 
+
+![image](https://github.com/user-attachments/assets/6567f6d7-a99e-4efd-99c9-b2f9c9136364)
+
+f. Certificate Type:  Server Certificate
+![image](https://github.com/user-attachments/assets/e7ce739c-6b61-4e63-b521-01780bbf970d)
+g. Click Save. 
+
+
+8. Navigate to System > User Manager
+![image](https://github.com/user-attachments/assets/bfe22f82-f81c-49b5-9ad2-ad727dcf17b2)
+
+
+9. On the System: User Manager page, click the +Add icon to create a new user. 
+![image](https://github.com/user-attachments/assets/6bc59764-4049-4059-abf2-e9a42787067e)
+
+10. Fill in your username and password
+   ![image](https://github.com/user-attachments/assets/8fd79b22-9bdf-4422-bea3-3ae51cb4659b)
+
+ Check the box next to Click to create a user certificate (more options will appear). Then very 
+the following information
+![image](https://github.com/user-attachments/assets/9b613b77-91e5-4a00-b317-622251e5cbd5)
+
+
+i. Descriptive name:  VPNUser_Cert 
+ii. Certificate Authority:  MyCA
+iii. Key Length:  2048 bits 
+iv. Lifetime:  365 days
+![image](https://github.com/user-attachments/assets/fda5ffec-a390-465c-9c6f-1cce87b9d86e)
+
+![image](https://github.com/user-attachments/assets/7645a5e1-eb51-4b0d-a816-779b8abbdaa1)
+
+e. Click Save. 
+
+11. Navigate to VPN > OpenVPN.
+ ![image](https://github.com/user-attachments/assets/018a4e95-b338-49c8-b58a-f8d153650f48)
+
+
+12. While on the OpenVPN: Server page, click on the Wizards tab.
+![image](https://github.com/user-attachments/assets/52959dff-3a23-4582-9ef5-6678d7fe4aba)
+
+
+13. A new page appears; select Local User Access for Type of Server. Click Next. 
+![image](https://github.com/user-attachments/assets/3bb83efa-efa6-4df7-ba5e-b955aad90e8a)
+
+14. On the next page, select MyCA as the Certificate Authority. Click Next.
+![image](https://github.com/user-attachments/assets/81bc8cf5-2a4b-4360-8ee1-9299eeb0aa7a)
+
+
+15. Next, select VPNServerCert as the Certificate. Click Next.
+![image](https://github.com/user-attachments/assets/d17d1d00-f0ce-42eb-978a-0ef32c3b2849)
+
+
+16. On the next page, fill in all necessary fields as mentioned below (if the field is not mentioned, leave 
+its default setting):
+![image](https://github.com/user-attachments/assets/31e1e240-fa36-4608-9c53-fbcecce5aebf)
+
+
+e. Cryptographic Settings: 
+i. TLS Authentication:  Checked 
+ii. Generate TLS Key:  Checked
+iii. DH Parameters Length:  2048 bit 
+iv. Fallback Data Encryption Algorithm:  AES-128-CBC (128-bit) 
+v. Hardware Crypto:  No Hardware Crypto Acceleration
+
+![image](https://github.com/user-attachments/assets/98d7f9a9-210d-4da8-8915-011bac41dcc4)
+![image](https://github.com/user-attachments/assets/5f61f894-2e4e-409c-a460-c5873fb0fbe0)
+![image](https://github.com/user-attachments/assets/aa9e660e-955a-4e41-b65b-be190946b2ae)
+
+
+f. Tunnel Settings: 
+i. Tunnel Network:  10.1.1.0/24 
+ii. Redirect Gateway:  Checked 
+iii. Local Network:  172.16.1.0/28 
+iv. Concurrent Connections:  10 
+v. Compression:  Disable Compression
+
+![image](https://github.com/user-attachments/assets/f7c032c3-3ac0-44ba-92b9-ee9de2efa2e8)
+![image](https://github.com/user-attachments/assets/4d8f874b-f0bd-456b-a52d-e8058b24eb0d)
+
+
+g. Client Settings: 
+i. Dynamic IP:  Checked, then Click Next. 
+![image](https://github.com/user-attachments/assets/fa834b4c-71b2-4282-ab3c-a6b5be6336da)
+
+
+17. On the Firewall Rule Configuration page, fill in the necessary fields: 
+a. Firewall Rule:  Checked 
+b. OpenVPN rule:  Checked 
+c. Click Next.
+
+![image](https://github.com/user-attachments/assets/1d5f6929-92dd-409c-8749-1c388a985d1f)
+
+18. On the final configuration page, select Finish.
+
+
+
+
+
+
+
+
+
+
 </details>
+
+
 
 
 
