@@ -4,7 +4,7 @@
 OBJECTIVE
 
 <details>
-<summary><b>Configure ICMP on the Firewall </b></summary>
+<summary><b>CONFIGURE ICMP ON A FIREWALL</b></summary>
 
   <b>Blocking ICMP Requests on pfSense </b>
 Firstly, we will be using the UbuntuSRV virtual machine. Lunch the VM and open the terminal
@@ -62,7 +62,7 @@ a new rule.
 
 
 <details>
-<summary><b>Redirecting Traffic to Internal Hosts on the Network </b></summary>
+<summary><b>REDIRECTING TRAFFIC TO INTERNAL HOST ON A NETWORK </b></summary>
 
   <b>Configuring pfSense to Allow Port and Redirect Requests</b>
 
