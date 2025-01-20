@@ -4,6 +4,31 @@
 <B>OBJECTIVE</B>
 The objective of this lab is to develop hands-on expertise in configuring and managing a network-based firewall using pfSense. This includes securing network communication by controlling ICMP traffic, redirecting traffic to internal hosts, managing SSH connections, and setting up a robust VPN system for secure remote access and connectivity.
 
+
+## Key Configurations
+1. **ICMP Configuration**
+   - Block ICMP requests on the firewall to enhance network security.
+
+2. **Traffic Redirection**
+   - Redirect traffic to internal hosts securely.
+   - Configure pfSense to allow specific ports and redirect requests.
+
+3. **SSH Connection Management**
+   - Retarget and manage SSH connections through the firewall.
+
+4. **VPN Configuration**
+   - Configure a VPN server on pfSense to establish secure communication.
+   - Export VPN client data for secure connectivity.
+   - Configure and connect VPN clients.
+   - Manage and troubleshoot VPN connections.
+
+## Technologies and Tools Used
+- **pfSense:** Network firewall and router platform.
+- **Ubuntu:** Linux distribution for testing and deployment.
+- **Kali Linux:** Security-focused Linux distribution for testing and monitoring.
+
+
+
 <b>Experience Gained:</b>
 
 - <b>Firewall Configuration:</b> Proficiency in configuring ICMP rules to control and secure network traffic.
