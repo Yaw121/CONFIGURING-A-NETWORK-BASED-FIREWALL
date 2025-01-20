@@ -54,6 +54,24 @@ Enhanced problem-solving skills through diagnosing and resolving configuration i
 This lab provides foundational knowledge and practical skills for securing and managing network infrastructures in real-world environments.
 
 
+## Instructions
+1. **ICMP Configuration**
+   - Navigate to the firewall settings in pfSense.
+   - Set up rules to block ICMP requests.
+
+2. **Traffic Redirection**
+   - Define port forwarding rules in pfSense.
+   - Redirect traffic to internal hosts as needed.
+
+3. **SSH Configuration**
+   - Retarget SSH traffic to specific internal hosts.
+   - Verify SSH connection functionality.
+
+4. **VPN Setup**
+   - Configure a VPN server in pfSense.
+   - Export the VPN client data.
+   - Install and configure the VPN client.
+   - Test and manage VPN connections.
 
 
 
