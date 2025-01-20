@@ -289,16 +289,34 @@ c. Click Next.
 
 18. On the final configuration page, select Finish.
 
-
-
-
-
-
-
-
-
-
 </details>
+
+<details>
+<summary><b>EXPORTING VPN CLIENT DATA</b></summary>
+
+1. While on the Kali system, open a terminal and type the command below to change to the 
+Downloads directory. 
+
+![image](https://github.com/user-attachments/assets/fdc6939e-3eb6-4c23-a38e-59947be4f60f)
+
+
+ 2. Unzip the downloaded zip file. 
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
