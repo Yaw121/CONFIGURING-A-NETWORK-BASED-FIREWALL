@@ -1,7 +1,41 @@
 ### CONFIGURING A NETWORK BASED FIREWALL
 
 
-OBJECTIVE
+<B>OBJECTIVE</B>
+The objective of this lab is to develop hands-on expertise in configuring and managing a network-based firewall using pfSense. This includes securing network communication by controlling ICMP traffic, redirecting traffic to internal hosts, managing SSH connections, and setting up a robust VPN system for secure remote access and connectivity.
+
+<b>Experience Gained:</b>
+
+- <b>Firewall Configuration:</b> Proficiency in configuring ICMP rules to control and secure network traffic.
+Skills in redirecting traffic to internal hosts and setting up port forwarding effectively.
+Secure Connectivity:
+
+
+- <b>Secure Connectivity:</b> Experience in retargeting and managing SSH connections through a firewall.
+  Understanding the principles of securing remote access using encryption protocols
+
+
+- <b>VPN Setup and Management:</b> Practical knowledge in configuring a VPN server on pfSense to establish secure communication channels.
+Expertise in exporting VPN client data and configuring client devices for seamless connectivity.
+Skills in managing and troubleshooting VPN connections to ensure reliability and security.
+
+
+- <b>Network Security Best Practices:</b> Understanding the role of firewalls and VPNs in protecting network infrastructure.
+Hands-on experience in applying security measures to prevent unauthorized access.
+
+
+- <b>Technical Proficiency:</b> Familiarity with tools such as pfSense, Ubuntu, and Kali Linux for network administration and security tasks.
+Enhanced problem-solving skills through diagnosing and resolving configuration issues.
+This lab provides foundational knowledge and practical skills for securing and managing network infrastructures in real-world environments.
+
+
+
+
+
+
+
+
+
 
 <details>
 <summary><b>CONFIGURE ICMP ON A FIREWALL</b></summary>
